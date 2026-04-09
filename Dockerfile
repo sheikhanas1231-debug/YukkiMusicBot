@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 RUN apt-get update -y && apt-get upgrade -y \
-    && apt-get install -y --no-install-recommends ffmpeg nodejs npm \
+    && apt-get install -y --no-install-recommends ffmpeg nodejs npm git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
